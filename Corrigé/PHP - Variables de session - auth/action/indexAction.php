@@ -2,7 +2,7 @@
 	session_start(); // Créer un cookie avec PHPSESSID s'il n'existe pas, sinon charge les variables de session
 
 	function execute() {
-		$email = $_SESSION["courriel"] ?? null;
+		$email = $_SESSION["courriel"] ?? null; //WHY THIS CHECK?
 		$connectionError = false;
 		
 		if (isset($_POST["courriel"]) && isset($_POST["motDePasse"])) {
@@ -11,7 +11,7 @@
 		
 				$email = $_POST["courriel"];
 
-				// Toronto, rappelle-toi du courriel aussi longtemps que la session existe!!!!!
+				// Serveur, rappelle-toi du courriel aussi longtemps que la session existe!!!!!
 				$_SESSION["courriel"] = $email;
 				$_SESSION["role"] = "admin";
 				// $cour = $_SESSION["courriel"]

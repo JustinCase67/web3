@@ -3,7 +3,6 @@
 
     $action = new IndexAction();
     $data = $action->execute();
-
     require_once("partial/header.php");
 ?>
     <h1>Gagner une nuitée au château Frontenac</h1>

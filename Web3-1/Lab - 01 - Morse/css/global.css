@@ -17,3 +17,7 @@ body {
     bottom:0px;
     z-index:-1;
 }
+
+button{
+    position:relative;
+}
